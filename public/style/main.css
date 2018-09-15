@@ -5,6 +5,7 @@ body {
 	font-size: 18px;
 	font-weight: 300;
 	overflow-x: hidden;
+	padding-bottom: 5%
 }
 
 a { transition: all 0.3s ease; }
@@ -171,4 +172,12 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+button{
+	border-radius: 5px; 
+	border-color: black;
+	background: white; 
+	font-weight: bold;  
+	width: 30%
 }

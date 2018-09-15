@@ -6,7 +6,7 @@
         
         this.setupEvents = function() {
             $(window).on(
-                'scroll',
+                "scroll",
                 this.handleScroll.bind(this)
             );
         };
@@ -15,17 +15,17 @@
             var scrollTop = $(document).scrollTop();
             var windowHeight = $(window).height();
             var height = $(document).height() - windowHeight;
-            var scrollPercentage = (scrollTop / height);
+            var scrollPercentage = (scrollTop/height);
 
-            // if the scroll is more than 90% from the top, load more content.
             if(scrollPercentage > 0.9) {
-                this.doSomething();
+                // TODO: get next image source, title, and tutor from server
+                
+                this.loadNext("placeholder.png", "Placeholder Title", "placeholder user");
             }
         }
  
-        this.doSomething = function() {
-            // Do something.
-            // Load data or whatever.
+        this.loadNext = function(img_src, title, tutor) {
+            $("#infinite-scroll").append("<div class=\"sub-container\"><h4>" + title + "</h4><p class=\"small\">courtesy of <span>" + tutor + "</span></p><embed src=\"" + img_src + "\" class=\"video\"></div>");
         }
  
         this.initialize();
@@ -33,8 +33,7 @@
  
     $(document).ready(
         function() {
-            // Initialize scroll
             new InfiniteScroll();
         }
     );
-})(jQuery, window);
+}) (jQuery, window);

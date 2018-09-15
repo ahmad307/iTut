@@ -73,6 +73,13 @@ p { line-height: 1.9; }
 .large-container {
     background-color: white;
 }
+
+.sub-container {
+    padding: 30px 30px 30px 30px;
+    background-color: #ececec;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
     
 .site-name {
 	color: #650071;
@@ -91,16 +98,6 @@ p { line-height: 1.9; }
 .white-text { color: white; }
 
 .section { padding-bottom: 75px; }
-
-.odd {
-    padding: 30px 30px 30px 30px;
-    background-color: #ececec;
-}
-
-.even {
-    padding: 30px 30px 30px 30px;
-    background-color: #dcdcdc;
-}
 
 .new-question-button {
     background-color: #dcdcdc;

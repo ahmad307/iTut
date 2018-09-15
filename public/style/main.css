@@ -1,0 +1,163 @@
+body {
+	color: #8c8c8c;
+    background-color: #650071;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+a { transition: all 0.3s ease; }
+a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+h2 { font-size: 2.2rem; }
+h3 { 
+	font-size: 1.65rem; }
+h4 { 
+	font-size: 1.4rem;
+	line-height: 1.6;
+}
+
+p { line-height: 1.9; }
+
+.container {
+    background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+    padding: 0px 50px 50px 50px;
+	max-width: 72.4%;
+	overflow-x: hidden;
+}
+	
+.site-name {
+	color: #650071;
+	display: block;
+	font-size: 2.6rem;
+	font-weight: 400;
+}
+
+.hr { 
+	margin-top: 30px;
+	border-top: 1px solid #CCCCCC; 
+}
+
+.purple-text { color: #650071; }
+.white-text { color: white; }
+
+.section { padding-bottom: 75px; }
+
+.odd {
+    padding: 20px 20px 20px 20px;
+    background-color: #ececec;
+}
+
+.even {
+    padding: 20px 20px 20px 20px;
+    background-color: #dcdcdc;
+}
+
+.new-question-button {
+    background-color: #dcdcdc;
+    border: none;
+    position: relative;
+    bottom: 15px;
+    padding: 20px 20px 20px 20px;
+    color: #8c8c8c;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    float: right;
+    font-size: 1rem;
+}
+
+.search-form {
+    height: 100%;
+    overflow: hidden;
+}
+
+.search-bar {
+    display: inline;
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-color: #8c8c8c;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #8c8c8c;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.search-submit {
+    display: none;
+}
+
+.title {
+	margin-top: 1rem;
+	padding-top: 2rem;
+	margin-bottom: 1rem;
+	line-height: 1.4;
+}
+
+.subtitle {
+	font-size: 1.4rem;
+	max-width: 800px;
+	margin: 0 auto 80px;
+}
+
+.content-box {
+	max-width: 310px;
+	margin: 0 auto;
+}
+
+pre {
+	font-size: 0.9rem;
+	color: black;
+	font-family: Monaco, monospace;
+	background-color: #fafafa;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 20px 20px 10px 20px;
+}
+
+code {
+	font-size: 0.9rem;
+	color: black;
+	font-family: Monaco, monospace;
+	background-color: #fafafa;
+	padding: 5px;
+}
+
+.code {
+	font-size: 0.9rem;
+	color: black;
+	font-family: Monaco, monospace;
+	background-color: #fafafa;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 20px 20px 10px 20px;
+}
+
+.code p { line-height: 1.6; }
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

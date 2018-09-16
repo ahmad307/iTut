@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/main.css">  
+    <title>iTut</title>
+
+    <script defer src="/__/firebase/5.5.0/firebase-app.js"></script>
+    <script defer src="/__/firebase/5.5.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.5.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.5.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.5.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="hr"></div>
+            <div class="header-inner">
+                <a href="index.html"><h1 class="site-name">iTut</h1></a>
+                <nav class="navbar main-nav">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link">News Feed</a></li>
+                        <li class="nav-item"><a href="new-question.html" class="nav-link">New Request</a></li>
+                        <li class="nav-item active"><a href="answer.html" class="nav-link">Respond to a Request</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hr"></div>
+        </div>
+    </header>
+    <div class="container" id="infinite-scroll">
+        <h3>Respond to a Request</h3>
+        <div class="sub-container">
+            <h4>Placeholder title</h4>
+            <p class="small">posted by <span>placeholder user</span> at <span>placeholder time</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget lorem vel nulla commodo porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia tempor ipsum non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur convallis augue eget mi placerat fermentum. Cras nisi nunc, malesuada vitae ligula in, vestibulum interdum eros. Sed vitae gravida magna. Mauris varius aliquet lectus, at suscipit ligula pellentesque quis.</p>
+        </div>
+        <div class="sub-container">
+            <h4>Placeholder title</h4>
+            <p class="small">posted by <span>placeholder user</span> at <span>placeholder time</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget lorem vel nulla commodo porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia tempor ipsum non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur convallis augue eget mi placerat fermentum. Cras nisi nunc, malesuada vitae ligula in, vestibulum interdum eros. Sed vitae gravida magna. Mauris varius aliquet lectus, at suscipit ligula pellentesque quis.</p>
+        </div>
+        <div class="sub-container">
+            <h4>Placeholder title</h4>
+            <p class="small">posted by <span>placeholder user</span> at <span>placeholder time</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget lorem vel nulla commodo porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia tempor ipsum non feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur convallis augue eget mi placerat fermentum. Cras nisi nunc, malesuada vitae ligula in, vestibulum interdum eros. Sed vitae gravida magna. Mauris varius aliquet lectus, at suscipit ligula pellentesque quis.</p>
+        </div>
+    </div>
+    <p id="login-signup-link"><a href="login.html">Login</a> | <a href="sign-up.html">Sign up</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/infinite-scroll-requests.js"></script>
+</body>
+</html>

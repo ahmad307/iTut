@@ -17,31 +17,25 @@
 </head>
 <body>
     <header class="header">
-		<div class="container">
+        <div class="container">
             <div class="hr"></div>
-			<div class="header-inner">
-				<a href="index.html"><h1 class="site-name">iTut</h1></a>
-				<nav class="navbar main-nav">
-					<ul class="nav navbar-nav">
-						<li class="nav-item active"><a href="index.html" class="nav-link">News Feed</a></li>
-						<li class="nav-item"><a href="new-question.html" class="nav-link">New Request</a></li>
-						<li class="nav-item"><a href="answer.html" class="nav-link">Respond to a Request</a></li>
-					</ul>
-				</nav>
-			</div>
+            <div class="header-inner">
+                <a href="index.html"><h1 class="site-name">iTut</h1></a>
+            </div>
             <div class="hr"></div>
-		</div>
-	</header>
-    <div class="container" id="infinite-scroll">
-        <h3>News Feed</h3>
-        <div class="sub-container">
-            <h4>Placeholder title</h4>
-            <p class="small">courtesy of <span>placeholder user</span></p>
-            <embed src="placeholder.png" class="video">
         </div>
+    </header>
+    <div class="container">
+        <h3>Login</h3>
+        <form class="question-form" id="login-form" method="post">
+            <h4>E-mail</h4>
+            <input type="text" class="small-bar" name="email" id="email" autocomplete="off" placeholder="Enter your e-mail">
+            <h4>Password</h4>
+            <input type="password" class="small-bar" name="password" id="password" autocomplete="off" placeholder="Enter your password">
+            <p>Don't have an account? <a href="sign-up.html">Sign up!</p>
+            <input type="submit" id="login-submit" class="question-submit" value="Login">
+        </form>
     </div>
-    <p id="login-signup-link"><a href="login.html">Login</a> | <a href="sign-up.html">Sign up</p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts/infinite-scroll-news-feed.js"></script>
 </body>
 </html>

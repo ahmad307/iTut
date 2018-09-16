@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/main.css">  
+    <title>iTut</title>
+
+    <script defer src="/__/firebase/5.5.0/firebase-app.js"></script>
+    <script defer src="/__/firebase/5.5.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.5.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.5.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.5.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="hr"></div>
+            <div class="header-inner">
+                <a href="index.html"><h1 class="site-name">iTut</h1></a>
+                <nav class="navbar main-nav">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link">News Feed</a></li>
+                        <li class="nav-item active"><a href="new-question.html" class="nav-link">New Request</a></li>
+                        <li class="nav-item"><a href="answer.html" class="nav-link">Respond to a Request</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hr"></div>
+        </div>
+    </header>
+    <div class="container">
+        <h3>New Request</h3>
+        <form class="question-form" method="post">
+            <h4>Title</h4>
+            <input type="text" class="title-bar" name="title" autocomplete="off" placeholder="e.g. Prove a function is continuous">
+            <h4>Description</h4>
+            <textarea class="description-box" name="description" rows="5" placeholder="e.g. I'm confused about the steps required to prove that a function is continuous at a point. I know I am supposed to show that the function exists at that point and that the limit of the function exists at that point, but isn't the last step (showing that the two are equal) already sufficient to show that those two values exist?"></textarea>
+            <input type="submit" class="question-submit">
+        </form>
+    </div>
+    <p id="login-signup-link"><a href="login.html">Login</a> | <a href="sign-up.html">Sign up</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

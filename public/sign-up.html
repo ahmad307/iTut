@@ -18,29 +18,28 @@
 <body>
     <header class="header">
 		<div class="container">
+            <div class="hr"></div>
 			<div class="header-inner">
 				<a href="index.html"><h1 class="site-name">iTut</h1></a>
 			</div>
             <div class="hr"></div>
 		</div>
 	</header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts/main.js"></script>
     <div class="container">
-	<h2><b>Sign Up</b></h2>
-	<p></p>
-        <form class="question-form" method="post">
-  	    <h4>Enter Your Name</h4>
-            <input type="text" class="title-bar" name="title" autocomplete="off" placeholder="ex. John Doe">          
-	    <h4>Enter Your E-mail</h4>
-            <input type="text" class="title-bar" name="title" autocomplete="off" placeholder="ex. john.doe@mail.com">
+	<h3>Sign Up</b></h3>
+        <form class="question-form" id="signup-form" method="post">
+            <h4>Enter Your Name</h4>
+            <input type="text" class="small-bar" name="name" id="name" autocomplete="off" placeholder="John Doe">          
+            <h4>Enter Your E-mail</h4>
+            <input type="text" class="small-bar" name="email" id="email" autocomplete="off" placeholder="john.doe@mail.com">
             <h4>Enter Your Password</h4>
-            <input type="password" class="title-bar" name="title" autocomplete="off" placeholder="Enter your password">
-	    <h4>Re-enter Your Password</h4>
-            <input type="password" class="title-bar" name="title" autocomplete="off" placeholder="Must match password input above">
-	    <p>Already have an account? <a href = "login.html">Login!</p>
-            <button type="submit" class="question-submit">  Sign Up!  </button>
+            <input type="password" class="small-bar" name="password" id="password" autocomplete="off" placeholder="Enter your password">
+            <h4>Re-enter Your Password</h4>
+            <input type="password" class="small-bar" name="password-confirm" id="password-confirm" autocomplete="off" placeholder="Must match password above">
+            <p>Already have an account? <a href="login.html">Login!</a></p>
+            <input type="submit" id="signup-submit" class="question-submit" value="Sign Up">
         </form>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>

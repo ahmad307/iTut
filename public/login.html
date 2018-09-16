@@ -17,26 +17,25 @@
 </head>
 <body>
     <header class="header">
-		<div class="container">
-			<div class="header-inner">
-				<a href="index.html"><h1 class="site-name">iTut</h1></a>
-			</div>
+        <div class="container">
             <div class="hr"></div>
-		</div>
-	</header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts/main.js"></script>
+            <div class="header-inner">
+                <a href="index.html"><h1 class="site-name">iTut</h1></a>
+            </div>
+            <div class="hr"></div>
+        </div>
+    </header>
     <div class="container">
-	<h2><b>Login</b></h2>
-	<p></p>
-        <form class="question-form" method="post">
+        <h3>Login</h3>
+        <form class="question-form" id="login-form" method="post">
             <h4>E-mail</h4>
-            <input type="text" class="title-bar" name="title" autocomplete="off" placeholder="Enter your e-mail">
+            <input type="text" class="small-bar" name="email" id="email" autocomplete="off" placeholder="Enter your e-mail">
             <h4>Password</h4>
-            <input type="password" class="title-bar" name="title" autocomplete="off" placeholder="Enter your password">
-	    <p>Don't have an account? <a href = "sign-up.html">Sign up!</p>
-            <button type="submit" class="question-submit">  Login  </button>
+            <input type="password" class="small-bar" name="password" id="password" autocomplete="off" placeholder="Enter your password">
+            <p>Don't have an account? <a href="sign-up.html">Sign up!</p>
+            <input type="submit" id="login-submit" class="question-submit" value="Login">
         </form>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>

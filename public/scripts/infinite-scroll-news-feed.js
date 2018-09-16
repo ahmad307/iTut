@@ -20,6 +20,8 @@
             if(scrollPercentage > 0.9) {
                 // TODO: get next image source, title, and tutor from server
                 
+                // do some exception handling if there is no data left
+                
                 this.loadNext("placeholder.png", "Placeholder Title", "placeholder user");
             }
         }

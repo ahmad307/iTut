@@ -14,8 +14,7 @@ a:hover, a:focus {
 	outline: none;
 }
 
-a:hover, a:visited, a:link, a:active
-{
+a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
 
@@ -25,6 +24,7 @@ h3 {
 	font-size: 1.65rem;
     line-height: 1.6;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 h4 { 
@@ -84,14 +84,15 @@ p { line-height: 1.9; }
     
 .site-name {
 	color: #650071;
-	display: block;
+
+    display: block;
 	font-size: 2.6rem;
 	font-weight: 400;
 }
 
 .hr { 
 	margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 	border-top: 1px solid #CCCCCC; 
 }
 
@@ -133,6 +134,21 @@ p { line-height: 1.9; }
     margin-bottom: 20px;
 }
 
+.small-bar {
+    display: inline;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: #8c8c8c;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    padding: 10px;
+    font-size: 1rem;
+    width: 40%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
 .description-box {
     display: inline;
     background-color: white;
@@ -152,6 +168,11 @@ p { line-height: 1.9; }
 
 .question-submit {
     margin-top: 20px;
+    border-radius: 5px; 
+	border-color: black;
+	background: white; 
+	font-weight: bold;  
+	width: 30%;
 }
 
 .video {
@@ -174,10 +195,16 @@ body::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
 
-button{
+button {
 	border-radius: 5px; 
 	border-color: black;
 	background: white; 
 	font-weight: bold;  
-	width: 30%
+	width: 30%;
+}
+
+#login-signup-link {
+    position: absolute;
+    top: 30px;
+    left: 78%;
 }

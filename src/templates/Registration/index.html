@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Test Template -->
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Register</h1>
+<form id="registration_form">
+    <label for="user_name">User Name</label>
+    <input name="user_name" id="user_name">
+    <label for="name">Name</label>
+    <input name="name" id="name">
+    <label for="description">Description</label>
+    <input name="description" id="description">
+    <label for="categories">Categories (',' separated)</label>
+    <input name="categories" id="categories">
+    <button type="submit">Submit</button>
+</form>
+</body>
+<script type="text/javascript">
+    $('#registration_form').on('submit', function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: '/register_user/',
+            type: 'POST',
+            data: {
+                'csrfmiddlewaretoken': '{{ csrf_token }}',
+                'user_name': $('#user_name').val(),
+                'name': $('#name').val(),
+                'description': $('#description').val(),
+                'categories': $('#categories').val(),
+            },
+
+            error: function () {
+                console.log('Sending failed');
+            }
+        });
+    })
+</script>
+</html>

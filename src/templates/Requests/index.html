@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Test Template -->
+    <meta charset="UTF-8">
+    <title>Request</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Request</h1>
+<form id="request_form">
+    {% csrf_token %}
+    <label for="title">Title</label>
+    <input name="title" id="title">
+    <label for="asker">Asker</label>
+    <input name="asker_user_name" id="asker_user_name">
+    <label for="description">Description</label>
+    <input name="description" id="description">
+    <label for="category">Category</label>
+    <input name="category" id="category">
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+<script type="text/javascript">
+    $('#request_form').on('submit', function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: '/create_request/',
+            type: 'POST',
+            data: $('#request_form').serialize(),
+
+            success: function () {
+                console.log('success');
+            },
+            error: function () {
+                console.log('Sending Failed.');
+            }
+        })
+    })
+</script>
+</html>
